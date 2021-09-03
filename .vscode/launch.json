@@ -9,6 +9,7 @@
             "args": ["${workspaceFolder}/src/main.ts"],
             "autoAttachChildProcesses": true,
             "console": "integratedTerminal",
+            "env": {"STAGE": "dev"}
         }
     ]
 }
