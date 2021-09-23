@@ -31,6 +31,7 @@ export class TasksController {
     @Query() filters: GetTasksFilterDto,
     @GetUser() user: User,
   ): Promise<Task[]> {
+    throw 2;
     this.logger.verbose(`User ${user.username} retrieving all tasks`);
     return this.tasksService.findTasks(filters, user);
   }
